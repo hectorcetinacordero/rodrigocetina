@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Sitio personal de Rodrigo Cetina Marfil: estudiante, desarrollador en formación, diseño y apps." />
+  <title>Rodrigo Cetina Marfil | Portafolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Rodrigo</span>
+      </a>
+
+      <button class="nav__toggle" id="menuBtn" aria-expanded="false" aria-controls="menu">
+        <span class="sr-only">Abrir menú</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav__links" id="menu">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <button class="theme" id="themeBtn" type="button" aria-label="Cambiar tema">
+          <span class="theme__icon" aria-hidden="true">☾</span>
+          <span class="theme__text">Tema</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero container" id="top">
+      <div class="hero__text">
+        <p class="pill">Estudiante · Dev en formación · Diseño mobile-first</p>
+        <h1>
+          Rodrigo Cetina Marfil
+          <span class="grad">aprendiendo a construir software y apps</span>
+        </h1>
+        <p class="lead">
+          Estudio en la Preparatoria de la Escuela Modelo (3er año). Ya programo en <strong>Java</strong>,
+          he hecho proyectos en <strong>Python</strong> y estoy aprendiendo <strong>HTML</strong> y
+          <strong>CSS</strong>.
+          Me gusta el diseño, los colores en las apps y cómo se ven en el celular.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--ghost" href="tel:9999551407">Contactarme <i
+              class="margen_izquierda fa-brands fa-whatsapp"></i></a>
+        </div>
+
+        <div class="hero__meta">
+          <div class="meta">
+            <span class="meta__k">Email</span>
+            <a class="meta__v" href="mailto:rodcetinamarfil@gmail.com">rodcetinamarfil@gmail.com</a>
+          </div>
+          <div class="meta">
+            <span class="meta__k">Enfoque</span>
+            <span class="meta__v">Web · Apps · UI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__card" aria-label="Foto de Rodrigo">
+        <img src="assets/rodrigo.jpg" alt="Rodrigo Cetina Marfil" loading="eager" />
+        <div class="card__foot">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Disponible para aprender y colaborar</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="sobre-mi">
+      <header class="section__head">
+        <h2>Sobre mí</h2>
+        <p>Una mini bio clara, con lo que ya sabes y lo que estás construyendo.</p>
+      </header>
+
+      <div class="grid2">
+        <article class="card">
+          <h3>Lo que estoy buscando</h3>
+          <p>
+            Convertirme en desarrollador y crear productos que se vean bien, sean fáciles de usar y funcionen increíble
+            en celular.
+          </p>
+          <ul class="list">
+            <li>Mejorar Frontend (HTML/CSS/JS)</li>
+            <li>Aprender frameworks (React / Flutter, más adelante)</li>
+            <li>Crear proyectos reales y publicarlos</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Lo que me gusta</h3>
+          <p>
+            El diseño visual, la elección de colores y la experiencia de usuario. Me fijo mucho en el detalle y en que
+            “se sienta pro”.
+          </p>
+          <div class="chips" aria-label="Intereses">
+            <span class="chip">UI/UX</span>
+            <span class="chip">Diseño de interfaces</span>
+            <span class="chip">Apps móviles</span>
+            <span class="chip">Portafolios</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="habilidades">
+      <header class="section__head">
+        <h2>Habilidades</h2>
+        <p>Lo que ya dominas y lo que estás aprendiendo (sin exagerar, pero con confianza).</p>
+      </header>
+
+      <div class="skills">
+        <div class="skill card">
+          <div class="skill__top">
+            <h3>Java</h3><span class="tag">Base sólida</span>
+          </div>
+          <p>Fundamentos, lógica y estructura. Ideal para practicar OOP.</p>
+          <div class="bar" role="img" aria-label="Nivel Java: alto">
+            <span style="width: 78%"></span>
+          </div>
+        </div>
+
+        <div class="skill card">
+          <div class="skill__top">
+            <h3>Python</h3><span class="tag">Proyectos</span>
+          </div>
+          <p>Scripts y proyectos pequeños para automatizar y aprender.</p>
+          <div class="bar" role="img" aria-label="Nivel Python: medio">
+            <span style="width: 60%"></span>
+          </div>
+        </div>
+
+        <div class="skill card">
+          <div class="skill__top">
+            <h3>HTML</h3><span class="tag">Aprendiendo</span>
+          </div>
+          <p>Maquetación semántica, secciones, accesibilidad básica.</p>
+          <div class="bar" role="img" aria-label="Nivel HTML: medio-bajo">
+            <span style="width: 52%"></span>
+          </div>
+        </div>
+
+        <div class="skill card">
+          <div class="skill__top">
+            <h3>CSS</h3><span class="tag">Aprendiendo</span>
+          </div>
+          <p>Layouts responsive con Flexbox/Grid y buen diseño.</p>
+          <div class="bar" role="img" aria-label="Nivel CSS: medio-bajo">
+            <span style="width: 48%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="proyectos">
+      <header class="section__head">
+        <h2>Proyectos</h2>
+        <p>Deja estos como “plantillas” y luego solo cambias texto, links y capturas.</p>
+      </header>
+
+      <div class="projects">
+        <article class="project card">
+          <div class="project__head">
+            <h3>Proyecto Java · (Nombre aquí)</h3>
+            <span class="tag">Java</span>
+          </div>
+          <p>
+            Describe en una línea qué hace. Ej: “Sistema de registro de alumnos con menú y validaciones”.
+          </p>
+          <div class="project__links">
+            <a class="link" href="#" aria-disabled="true">Repo</a>
+            <a class="link" href="#" aria-disabled="true">Demo</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <div class="project__head">
+            <h3>Proyecto Python · (Nombre aquí)</h3>
+            <span class="tag">Python</span>
+          </div>
+          <p>
+            Ej: “Script que organiza archivos por tipo y genera un reporte”.
+          </p>
+          <div class="project__links">
+            <a class="link" href="#" aria-disabled="true">Repo</a>
+            <a class="link" href="#" aria-disabled="true">Demo</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <div class="project__head">
+            <h3>Landing Page · (Nombre aquí)</h3>
+            <span class="tag">HTML/CSS</span>
+          </div>
+          <p>
+            Ej: “Landing responsive con secciones, botones, tarjetas y modo oscuro”.
+          </p>
+          <div class="project__links">
+            <a class="link" href="#" aria-disabled="true">Repo</a>
+            <a class="link" href="#" aria-disabled="true">Demo</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="note card">
+        <h3>Tip rápido</h3>
+        <p>
+          Cuando tengas tu GitHub, reemplaza los links de “Repo” y agrega una captura del proyecto.
+          Si quieres, te preparo una sección de “capturas” con modal/galería.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container" id="contacto">
+      <header class="section__head">
+        <h2>Contacto</h2>
+        <p>La forma más simple (y efectiva) para que te escriban.</p>
+      </header>
+
+      <div class="contact card">
+        <div>
+          <h3>Escríbeme</h3>
+          <p>Respondo más rápido por correo.</p>
+          <a class="btn" href="mailto:rodcetinamarfil@gmail.com?subject=Contacto%20desde%20tu%20sitio%20web">Enviar
+            email</a>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <label>
+            Tu nombre
+            <input name="name" autocomplete="name" placeholder="Ej. Alex" required />
+          </label>
+
+          <label>
+            Tu email
+            <input name="email" type="email" autocomplete="email" placeholder="tuemail@correo.com" required />
+          </label>
+
+          <label>
+            Mensaje
+            <textarea name="message" rows="4" placeholder="¿En qué podemos colaborar?" required></textarea>
+          </label>
+
+          <button class="btn btn--ghost" type="submit">Copiar mensaje</button>
+          <p class="form__hint" id="formHint">Este formulario no envía a un servidor: copia el mensaje y te abre el
+            correo.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__in">
+      <p>© <span id="year"></span> Rodrigo Cetina Marfil</p>
+      <p class="muted">Hecho con HTML + CSS + JS (mobile-first).</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
